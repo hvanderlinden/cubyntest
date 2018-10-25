@@ -1,0 +1,13 @@
+{
+  "name": "cubyn",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.2.6",
+    "mysql": "^2.16.0",
+    "nodemon": "^1.18.4"
+  }
+}
