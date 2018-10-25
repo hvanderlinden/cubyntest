@@ -1,6 +1,6 @@
 'use strict';
 module.exports = function(app) {
-	var parcel = require('../controllers/parcelController');
+	var parcels = require('../controllers/parcelController');
 
 	// parcel Routes
 	app.route('/parcels')
@@ -10,8 +10,5 @@ module.exports = function(app) {
 	app.route('/parcels/:parcelId')
 	.get(parcel.read_a_parcel)
 	.put(parcel.update_a_parcel)
-	.delete(parcel.delete_a_parcel);
-
-	app.route('/parcels/estimate/:parcelId')
-	.get(parcel.estimate_a_parcel);
+	.delete(parcel.delete_a_parcel);s
 };
