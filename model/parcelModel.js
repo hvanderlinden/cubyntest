@@ -2,10 +2,9 @@ var sql = require('../db.js');
 
 //Parcel object constructor
 var Parcel = function(parcel){
-    this.parcel = parcel.parcel;
     this.type = parcel.type;
     this.weight = parcel.weight;
-    this.volumn = parcel.volume;
+    this.volume = parcel.volume;
     this.recipient = parcel.recipient;
     this.address = parcel.address;
     this.city = parcel.city;

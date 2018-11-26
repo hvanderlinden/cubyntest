@@ -6,7 +6,8 @@
     "start": "node app.js"
   },
   "dependencies": {
-    "express": "3.2.6",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.3.0",
     "mysql": "^2.16.0",
     "nodemon": "^1.18.4"
   }

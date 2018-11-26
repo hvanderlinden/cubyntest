@@ -14,12 +14,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: true
 }));
-app.use(app.router);
-
-// development only
-if ('development' === app.get('env')) {
-  app.use(express.errorHandler());
-}
 
 //default route
 app.get('/', function (req, res) {
@@ -27,6 +21,8 @@ app.get('/', function (req, res) {
 });
 
 var sql = require('./db.js');
+
+var parcels = require('./controllers/parcelController');
 
 var routes = require('./routes/parcelRoutes'); //importing route
 routes(app); //register the route
